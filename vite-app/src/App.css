@@ -1,0 +1,51 @@
+
+*{
+  padding: 0;
+margin: 0;
+}
+.card {
+  border: 2px solid black;
+}
+
+.grid{
+  max-width: 110rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+}
+
+
+.App{
+  display:  flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.Header{
+  height: 60px;
+
+}
+.Content{
+  display: flex;
+  flex: 1;
+  overflow-y: auto;
+}
+.Footer{
+  height: 60px;
+  background-color: black;
+}
+
+.itemcardimage{
+  height: 160px !important;
+  object-fit: scale-down;
+}
+.itemcard{
+  margin: 8px;
+}
+
+.menuitem{
+  background-color: black;
+  
+}
