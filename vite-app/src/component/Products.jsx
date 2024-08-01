@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { AddToCart, getAllProducts } from '../API'
+import { AddToCart, getAllProducts, GetProductByCategory } from '../API'
 import { Badge, Button, Card, Image, List, message, Rate, Typography } from 'antd'
+import Category from '../pages/Category'
+import { useParams } from 'react-router-dom'
 
 function Products() {
+    const param = useParams()
     const [item,setItem]=useState([])
 
 
+
     useEffect(()=>{
-        getAllProducts().then((res)=>{
+        (param?.categoryId ? GetProductByCategory(param.categoryId):getAllProducts()).then((res)=>{
             setItem(res.products);
         })
         
@@ -15,7 +19,7 @@ function Products() {
 
         
 
-    },[])
+    },[param])
   return (
     <div>
         <List

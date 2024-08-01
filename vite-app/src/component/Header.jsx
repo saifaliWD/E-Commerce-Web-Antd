@@ -26,12 +26,12 @@ function Header() {
             label:"Mens",
             key:"men",
             children:[{
-                label:"Mens Perfume ",
-                key:"mensperfume"
+                label:"Mens's Shirts ",
+                key:"mens-shirts"
             },
             {
-                label:"Mens cloths",
-                key:"menscloths"
+                label:"Mens Shoes",
+                key:"mens-shoes"
             }]
         },
         {
@@ -39,20 +39,20 @@ function Header() {
             key:"women",
             children:[{
 
-                label:"Women Accessories",
-                key:"womenaccessories"
+                label:"Womens cloths",
+                key:"womens-dresses"
                
             },
             {
 
-                label:"Women Tools",
-                key:"womentools"
+                label:"Womens Jewellery",
+                key:"womens-jewellery"
                
             }]
         },
         {
-            label:"Grocerys",
-            key:"grocerys"
+            label:"Smartphones",
+            key:"smartphones"
         }
     
     ]}
